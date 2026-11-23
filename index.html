@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#183f39">
+  <meta name="description" content="An interactive exhibit tracing how China–Singapore cooperation and local adaptation changed business approval practices in Suzhou Industrial Park.">
+  <title>One Window · Local Authority</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Crect width='60' height='60' rx='14' fill='%23183f39'/%3E%3Cpath d='M15 42V19h30v23M30 19v23M15 31h30' fill='none' stroke='%23f8f3e8' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="locale-zh.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#experiment" data-i18n="skip">Skip to the interactive exhibit</a>
+  <header class="masthead wrap">
+    <a class="brand" href="#top" aria-label="One Window home" data-i18n-label="home"><span class="brand-mark" aria-hidden="true">ow.</span><span data-i18n="brand">One Window<span class="brand-sub" data-i18n="brandSub">LOCAL AUTHORITY</span></span></a>
+    <nav aria-label="Main navigation" data-i18n-label="mainNav"><a href="#experiment" data-i18n="navigationExperiment">The experiment</a><a href="#exchange" data-i18n="navigationExchange">The exchange</a><button class="nav-source" data-open-sources data-i18n="sources">Sources <span aria-hidden="true">↗</span></button></nav>
+    <div class="masthead-actions">
+      <span class="course-label">CHI1293 <span data-i18n="courseLabel">Interactive history</span></span>
+      <div class="language-toggle" role="group" aria-label="Display language" data-i18n-label="language" hidden>
+        <button type="button" lang="en" data-language="en" aria-pressed="true">English</button>
+        <button type="button" lang="zh-CN" data-language="zh" aria-pressed="false">中文</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="main-title">
+      <div><p class="eyebrow" data-i18n="period"><span class="small-rule"></span> SUZHOU × SINGAPORE · 1994–2015</p><h1 id="main-title" data-i18n="heroTitle">One window.<br><em data-i18n="heroQuestion">Who decides?</em></h1></div>
+      <div class="hero-intro"><p class="hero-lead"><span data-i18n="heroLeadPlace">A shared address changes where you go.</span><br><span data-i18n="heroLeadAuthority">Delegated authority changes what can happen there.</span></p><p data-i18n="heroIntro">Through intergovernmental diplomatic bodies—a joint council and bilateral working committee—Suzhou adapted Singapore’s hybrid investor-service model into local delegated approval authority, reshaping how foreign firms enter the market.</p><a class="text-link" href="#experiment" data-i18n="heroAction">Trace an application <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="experiment wrap" id="experiment" aria-labelledby="experiment-title">
+      <div class="exhibit-topline">
+        <div><span class="section-index" data-i18n="experimentIndex">01 / EXPERIMENT</span><h2 id="experiment-title" data-i18n="experimentTitle">Same idea. Different arrangements.</h2></div>
+        <div class="exhibit-tools">
+          <span class="mode-hint" data-i18n="chooseSetting"><span class="key-icon" aria-hidden="true">↔</span> Choose a historical setting</span>
+          <div class="language-toggle" role="group" aria-label="Display language" data-i18n-label="language" hidden>
+            <button type="button" lang="en" data-language="en" aria-pressed="true">English</button>
+            <button type="button" lang="zh-CN" data-language="zh" aria-pressed="false">中文</button>
+          </div>
+          <button class="focus-button" id="focus-button" aria-pressed="false"><span aria-hidden="true">⛶</span> <span id="focus-label">Focus view</span></button>
+        </div>
+      </div>
+      <div class="mode-tabs" role="tablist" aria-label="Historical setting" data-i18n-label="setting">
+        <button id="mode-2000" role="tab" aria-selected="true" aria-controls="exhibit-panel" tabindex="0" data-mode="2000"><span class="tab-year">2000</span><span class="tab-title" data-i18n="tab2000">A shared hall</span><span class="tab-arrow" aria-hidden="true">↗</span></button>
+        <button id="mode-2003" role="tab" aria-selected="false" aria-controls="exhibit-panel" tabindex="-1" data-mode="2003"><span class="tab-year">2003</span><span class="tab-title" data-i18n="tab2003">Delegated authority</span><span class="tab-arrow" aria-hidden="true">↗</span></button>
+        <button id="mode-2005" role="tab" aria-selected="false" aria-controls="exhibit-panel" tabindex="-1" data-mode="2005"><span class="tab-year">2005</span><span class="tab-title" data-i18n="tab2005">A business use</span><span class="tab-arrow" aria-hidden="true">↗</span></button>
+      </div>
+
+      <div class="exhibit-body" id="exhibit-panel" role="tabpanel" aria-labelledby="mode-2000" tabindex="0">
+        <div class="scene-column">
+          <div class="scene-header"><span data-i18n="park"><i class="status-dot" aria-hidden="true"></i> SUZHOU INDUSTRIAL PARK</span><span id="scene-year">SETTING / 2000</span></div>
+          <div class="scene" data-scene="2000" id="scene">
+            <svg class="scene-svg" viewBox="0 0 900 460" role="img" aria-labelledby="diagram-title diagram-desc">
+              <title id="diagram-title">A shared service hall in 2000</title><desc id="diagram-desc">An illustrative firm sends an application to departmental counters in a common hall. Switch settings to explore delegated approval functions.</desc>
+              <defs>
+                <pattern id="grid" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="#bac6b6" opacity=".5"/></pattern>
+                <filter id="paper-shadow" x="-80%" y="-80%" width="260%" height="260%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#173f3c" flood-opacity=".15"/></filter>
+              </defs>
+              <rect width="900" height="460" fill="url(#grid)"/>
+              <path d="M82 325L450 432L818 325" fill="none" stroke="#c5cdbb" stroke-width="1"/>
+              <path d="M115 344L450 441L785 344" fill="none" stroke="#d1d6c5" stroke-width="1"/>
+              <text x="450" y="60" class="svg-caption" text-anchor="middle" data-i18n="hall">INVESTOR SERVICE HALL</text>
+              <path class="hall-floor" d="M120 111H780V306L450 398L120 306Z" fill="#f5f3e9" stroke="#b7c4ae" stroke-width="1.5"/>
+              <path d="M120 111H780V124H120Z" fill="#dce3d3"/>
+              <path d="M120 306L450 398L780 306" fill="none" stroke="#b7c4ae" stroke-width="1.5"/>
+              <text x="147" y="145" class="svg-small" data-i18n="oneAddress">ONE ADDRESS</text>
+              <text x="751" y="145" class="svg-small" text-anchor="end" id="authority-label">DEPARTMENTAL WINDOWS</text>
+
+              <g class="department department-a" transform="translate(194 182)">
+                <path d="M0 10L14 0H146L132 10Z" fill="#c4d1bd"/><path d="M132 10L146 0V85L132 95Z" fill="#cad5c2"/>
+                <rect x="0" y="10" width="132" height="85" rx="2" fill="#fffdf6" stroke="#b8c7ae"/>
+                <path d="M0 36H132" stroke="#c8d1bf"/><text x="66" y="28" text-anchor="middle" class="desk-code" data-i18n="departmentA">DEPT. A</text>
+                <text x="66" y="70" text-anchor="middle" class="desk-label" data-i18n="receive">Receive</text>
+              </g>
+              <g class="department department-b" transform="translate(377 182)">
+                <path d="M0 10L14 0H146L132 10Z" fill="#c4d1bd"/><path d="M132 10L146 0V85L132 95Z" fill="#cad5c2"/>
+                <rect x="0" y="10" width="132" height="85" rx="2" fill="#fffdf6" stroke="#b8c7ae"/>
+                <path d="M0 36H132" stroke="#c8d1bf"/><text x="66" y="28" text-anchor="middle" class="desk-code" data-i18n="departmentB">DEPT. B</text>
+                <text x="66" y="70" text-anchor="middle" class="desk-label" data-i18n="receive">Receive</text>
+              </g>
+              <g class="department department-c" transform="translate(560 182)">
+                <path d="M0 10L14 0H146L132 10Z" fill="#c4d1bd"/><path d="M132 10L146 0V85L132 95Z" fill="#cad5c2"/>
+                <rect x="0" y="10" width="132" height="85" rx="2" fill="#fffdf6" stroke="#b8c7ae"/>
+                <path d="M0 36H132" stroke="#c8d1bf"/><text x="66" y="28" text-anchor="middle" class="desk-code" data-i18n="departmentC">DEPT. C</text>
+                <text x="66" y="70" text-anchor="middle" class="desk-label" data-i18n="receive">Receive</text>
+              </g>
+
+              <g id="integrated-centre" class="integrated-centre" transform="translate(315 166)">
+                <path class="centre-top" d="M0 14L18 0H288L270 14Z" fill="#78a88c"/><path class="centre-side" d="M270 14L288 0V112L270 126Z" fill="#316c58"/>
+                <rect class="centre-face" x="0" y="14" width="270" height="112" rx="3" fill="#1d5144"/>
+                <path d="M0 52H270" stroke="#89a993" stroke-opacity=".5"/>
+                <text x="135" y="39" text-anchor="middle" class="centre-title" data-i18n="centre">ONE-STOP CENTRE</text>
+                <text x="135" y="86" text-anchor="middle" class="centre-label" id="centre-label">Delegated approval</text>
+                <text x="135" y="111" text-anchor="middle" class="centre-small" id="centre-small">NEARLY 70 AUTHORIZED MATTERS</text>
+              </g>
+
+              <path id="route-line" d="M450 406V337L260 286" fill="none" stroke="#b86642" stroke-width="2.5" stroke-dasharray="6 7" opacity=".65"/>
+              <g id="firm" transform="translate(450 382)"><rect id="firm-rect" x="-52" y="0" width="104" height="48" rx="3" fill="#fdf8ee" stroke="#ac5a38" stroke-width="1.5"/><text x="0" y="29" text-anchor="middle" class="firm-label" id="firm-label">FIRM</text></g>
+              <g id="paper" class="paper" filter="url(#paper-shadow)" aria-hidden="true"><rect x="-13" y="-18" width="26" height="36" rx="2" fill="#fffdf6" stroke="#b35f3c" stroke-width="1.5"/><path d="M-7-8H7M-7-1H7M-7 6H3" fill="none" stroke="#b35f3c" stroke-width="1.5"/><animateMotion id="paper-motion" begin="indefinite" dur="2s" path="M450 395V337L260 268" fill="freeze"/></g>
+              <g class="result-stamp" id="result-stamp" transform="translate(548 323) rotate(-8)"><rect x="0" y="0" width="200" height="40" rx="2"/><text x="100" y="26" text-anchor="middle" id="stamp-text">RECEIVED</text></g>
+              <text x="146" y="317" class="svg-annotation" data-i18n="departmentsNote">Illustrative departments</text>
+            </svg>
+            <div class="scene-note"><span class="note-square" aria-hidden="true"></span><span id="scene-note">One hall, with each department represented at its own window.</span></div>
+          </div>
+          <div class="scene-disclaimer" data-i18n="sceneDisclaimer">Schematic routes explain recorded institutional changes. The drawing simplifies the organization and shows selected matters.</div>
+        </div>
+
+        <aside class="control-panel" aria-labelledby="setting-title">
+          <span class="setting-date" id="setting-date">11 APRIL 2000</span>
+          <h3 id="setting-title">Together<br><em>in place.</em></h3>
+          <p class="setting-copy" id="setting-copy">Departments brought their service windows into one hall and received applications together.</p>
+          <div class="detail-rule"></div>
+          <div class="authority-fact"><span class="detail-label" data-i18n="institutionalChange">THE INSTITUTIONAL CHANGE</span><p id="setting-fact">A common place to receive applications.</p></div>
+          <button class="apply-button" id="apply-button"><span>Follow an application</span><span aria-hidden="true">→</span></button>
+          <div class="application-status" id="application-status" role="status" aria-live="polite">Choose a setting, then follow the route.</div>
+          <button class="source-link" id="setting-source" data-source="2" data-i18n="settingSource">Read the historical record <span aria-hidden="true">↗</span></button>
+        </aside>
+      </div>
+      <div class="insight-bar"><span class="insight-mark" aria-hidden="true">↳</span><p id="insight">Co-location changes the place of service. Compare it with the later delegation of approval functions.</p><span class="insight-type" data-i18n="economicLens">THE ECONOMIC LENS</span></div>
+    </section>
+
+    <section class="exchange wrap" id="exchange" aria-labelledby="exchange-title">
+      <div class="exchange-intro"><span class="section-index" data-i18n="exchangeIndex">02 / THE EXCHANGE</span><h2 id="exchange-title" data-i18n="exchangeTitle">How did the<br> <em data-i18n="exchangeQuestion">practice travel?</em></h2><p data-i18n="exchangeIntro">Behind the local window stood an organized diplomatic channel connecting Singapore’s UN- and British-influenced EDB governance model with China’s administrative reform.</p></div>
+      <div class="exchange-rail">
+        <button class="milestone" data-event="agreement"><span class="milestone-year">1994</span><span class="milestone-dot"></span><span class="milestone-title" data-i18n="agreementTitle">An agreement to learn</span><span class="milestone-desc" data-i18n="agreementSummary">Selective learning under Chinese law, supported by joint coordinating bodies.</span><span class="milestone-source" data-i18n="agreementSource">Agreement arts. 2–4 · EDB [1, 3] <span aria-hidden="true">↗</span></span></button>
+        <button class="milestone" data-event="proposal"><span class="milestone-year">1995</span><span class="milestone-dot"></span><span class="milestone-title" data-i18n="proposalTitle">A proposal on the table</span><span class="milestone-desc" data-i18n="proposalSummary">The one-stop service draft reached the bilateral working committee.</span><span class="milestone-source" data-i18n="chronicleSource">Chronicle, p. 279 <span aria-hidden="true">↗</span></span></button>
+        <button class="milestone" data-event="training"><span class="milestone-year">2002</span><span class="milestone-dot"></span><span class="milestone-title" data-i18n="trainingTitle">Learning through people</span><span class="milestone-desc" data-i18n="trainingSummary">Eight officials attended dedicated one-stop service training in Singapore.</span><span class="milestone-source" data-i18n="chronicleSource">Chronicle, p. 279 <span aria-hidden="true">↗</span></span></button>
+      </div>
+    </section>
+
+    <section class="learning wrap" aria-labelledby="learning-title">
+      <div class="learning-heading"><span class="section-index" data-i18n="judgementIndex">03 / THE JUDGEMENT</span><h2 id="learning-title"><span data-i18n="judgementTitle">When does exchange</span><br><span data-i18n="judgementConnector"> become </span><em data-i18n="judgementQuestion">learning?</em></h2><p data-i18n="criteriaIntro">Three course criteria, each tied to evidence.</p></div>
+      <div class="learning-body">
+        <div class="criteria" role="tablist" aria-label="Criteria for mutual learning" data-i18n-label="criteria"><button id="criterion-selection" role="tab" aria-selected="true" tabindex="0" data-criterion="selection" aria-controls="criterion-panel" data-i18n="criterionSelection"><span>01</span> Active selection <span class="criterion-arrow" aria-hidden="true">↗</span></button><button id="criterion-adaptation" role="tab" aria-selected="false" tabindex="-1" data-criterion="adaptation" aria-controls="criterion-panel" data-i18n="criterionAdaptation"><span>02</span> Adaptation <span class="criterion-arrow" aria-hidden="true">↗</span></button><button id="criterion-integration" role="tab" aria-selected="false" tabindex="-1" data-criterion="integration" aria-controls="criterion-panel" data-i18n="criterionIntegration"><span>03</span> Lasting integration <span class="criterion-arrow" aria-hidden="true">↗</span></button></div>
+        <div class="criterion-panel" id="criterion-panel" role="tabpanel" aria-labelledby="criterion-selection" tabindex="0"><span class="criterion-status" data-i18n="criterionStatus">EVIDENCE SUPPORTS THIS CONDITION</span><h3 id="criterion-title">Chosen under sovereignty, not imposed.</h3><p id="criterion-copy">Article 3 of the 1994 agreement required selective adoption under Chinese law and respect for PRC sovereignty. The 1995 proposal and 2002 targeted training confirm deliberate, non-impositional learning.</p><button class="source-link" id="criterion-source" data-source="1,2" data-i18n="criterionSource">View supporting sources <span aria-hidden="true">↗</span></button></div>
+      </div>
+      <p class="judgement-note" data-i18n="judgementNote">Though China and Singapore share cultural ties, Singapore’s EDB model drew on a 1961 UN blueprint and British common-law civil-service traditions—making this an encounter between distinct institutional civilizations (“harmony without uniformity”). The strongest evidence here concerns learning on the Suzhou side.</p>
+    </section>
+
+    <footer class="wrap footer"><a class="footer-brand" href="#top" data-i18n="brand">One Window <span data-i18n="footerSubtitle">· Local Authority</span></a><span data-i18n="coursePair">International Relations × Economic Dimension</span><button data-open-sources data-i18n="footerSources">Sources & production notes <span aria-hidden="true">↗</span></button></footer>
+  </main>
+
+  <dialog class="source-dialog" id="source-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-header"><div><span class="section-index" data-i18n="dialogIndex">THE EVIDENCE DESK</span><h2 id="dialog-title" data-i18n="dialogTitle">Read the record.</h2></div><button class="dialog-close" id="dialog-close" aria-label="Close sources" data-i18n-label="closeSources">×</button></div>
+    <div class="dialog-body" id="dialog-body">
+      <p class="dialog-intro" data-i18n="dialogIntro">Each claim has a source. Page numbers below distinguish the PDF position from the original printed page.</p>
+      <div id="event-note" class="event-note" hidden></div>
+      <div id="sources-list"></div>
+      <section class="production-note"><h3 data-i18n="productionTitle">About this exhibit</h3><p data-i18n="productionDiagram">This interactive diagram uses an illustrative firm and simplified routes. The departments shown are schematic. Recorded dates, institutions and the scope of the 2005 example are source-referenced.</p><p data-i18n="productionScope">Lower coordination costs are an interpretation of the institutional change. The exhibit focuses on local implementation and retains uncertainty about the full comparison of Singaporean and Suzhou approval powers.</p><p data-i18n="productionAI">Research verification, bilingual localization and interface code were AI-assisted. The exhibit evolved across multiple rounds—from a local-only timeline sketch to a static dual-track infographic to this three-setting interactive comparison—while deliberately replacing unverified turnaround figures with the documented 2005 US$30m scope. Primary records were checked on 13 November 2026 and audited on 23 November 2026.</p></section>
+    </div>
+  </dialog>
+</body>
+</html>
