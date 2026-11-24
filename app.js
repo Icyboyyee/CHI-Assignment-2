@@ -3,63 +3,63 @@
 const settings = {
   '2000': {
     date:'11 APRIL 2000',title:'Together<br><em>in place.</em>',
-    copy:'Departments brought their service windows into one hall and received applications together.',
-    fact:'A common place to receive applications.',
-    authority:'DEPARTMENTAL WINDOWS',note:'One hall, with each department represented at its own window.',
-    insight:'Co-location changes the place of service. Compare it with the later delegation of approval functions.',
+    copy:'Departments set up separate service counters inside one hall and centrally received applications.',
+    fact:'Departmental counters received applications in a common hall.',
+    authority:'DEPARTMENTAL WINDOWS',note:'One hall, with each department receiving applications at its own counter.',
+    insight:'Co-location changes where applications are received. Compare it with the later authorization to decide selected matters.',
     firm:'FIRM',firmWidth:104,
-    centreLabel:'Delegated approval',centreSmall:'NEARLY 70 AUTHORIZED MATTERS',
+    centreLabel:'Selected approvals',centreSmall:'NEARLY 70 AUTHORIZED MATTERS',
     route:'M450 395V337L260 268',line:'M450 406V337L260 286',stamp:'RECEIVED',
-    status:'The application reaches a departmental window in the shared hall.',
-    description:'An illustrative firm sends an application to departmental counters in a common hall. The source records the organization of receipt in 2000.',
+    status:'The application reaches a departmental counter in the shared hall.',
+    description:'An illustrative firm sends an application to departmental counters in a common hall. The source records centralized receipt in 2000.',
     location:'Printed p. 279 · PDF p. 47'
   },
   '2003': {
     date:'2 JANUARY 2003',title:'Authority<br><em>moves too.</em>',
-    copy:'The service centre began exercising approval functions across nearly 70 authorized matters after its duties and delegated powers were established in 2002.',
-    fact:'The centre handled nearly 70 delegated approval matters.',
-    authority:'DELEGATED FUNCTIONS',note:'For authorized matters, the centre now exercises delegated approval authority.',
-    insight:'The institutional change concerns who holds approval power under Chinese law. Lower coordination costs are an interpretation of this change.',
+    copy:'After defining the centre’s duties in 2002, the park authorized it in January 2003 to exercise approval powers on selected matters while centrally receiving applications across nearly 70 authorized matters.',
+    fact:'The centre exercised approval powers on selected matters and received applications across nearly 70 authorized matters.',
+    authority:'SELECTED APPROVAL POWERS',note:'Authorized to decide selected matters · centrally receiving nearly 70 authorized items.',
+    insight:'The institutional change concerns who was authorized to decide selected applications. Lower coordination costs are a grounded interpretation of this shift.',
     firm:'FIRM',firmWidth:104,
-    centreLabel:'Delegated approval',centreSmall:'NEARLY 70 AUTHORIZED MATTERS',
+    centreLabel:'Selected approvals',centreSmall:'NEARLY 70 AUTHORIZED MATTERS',
     route:'M450 395V282',line:'M450 406V292',stamp:'CENTRE APPROVAL',
-    status:'For an authorized matter, approval is handled through the centre.',
-    description:'An illustrative firm sends a selected authorized matter to the one-stop centre, which began exercising approval functions across nearly 70 items in January 2003.',
+    status:'For an authorized approval matter, the decision is handled through the centre.',
+    description:'An illustrative firm submits a selected authorized matter to the one-stop centre, which began exercising approval powers on selected items and receiving applications across nearly 70 authorized matters in January 2003.',
     location:'Printed p. 280 · PDF p. 48'
   },
   '2005': {
     date:'6 APRIL 2005',title:'A specific<br><em>business use.</em>',
-    copy:'Authorized by the Economic and Trade Development Bureau, delegated work included establishment and amendment matters for foreign-invested enterprises with total investment below US$30 million.',
-    fact:'A specific foreign-investment entry process gained a service-centre channel.',
-    authority:'FIE DELEGATED SCOPE',note:'Example scope · foreign-invested enterprise establishment or amendment, total investment below US$30m.',
-    insight:'The record names a specific economic entry activity and its legal ceiling. It supports a change in market-entry access without estimating unverified time or cost savings.',
-    firm:'FIE (<US$30M)',firmWidth:192,
-    centreLabel:'FIE entry & changes',centreSmall:'BELOW US$30M · ECON. & TRADE BUREAU',
-    route:'M450 395V282',line:'M450 406V292',stamp:'FIE DELEGATED',
-    status:'The selected FIE establishment or amendment matter is handled through the centre.',
-    description:'The 2005 example concerns establishment and amendment matters for foreign-invested enterprises with total investment below thirty million US dollars. The route is schematic.',
+    copy:'Authorized by the park’s Economic and Trade Development Bureau, the centre handled establishment and amendment applications for foreign-invested enterprises (FIEs) with total investment up to US$30 million.',
+    fact:'Eligible foreign-invested enterprises could apply at the centre to establish or amend their business.',
+    authority:'AUTHORIZED FIE MATTERS',note:'Example scope · FIE establishment & amendment, total investment threshold up to US$30m.',
+    insight:'The chronicle names a concrete foreign-investment activity and its US$30 million total-investment threshold—supporting a change in approval channel without claiming unspecified time or cost savings.',
+    firm:'FOREIGN FIRM (≤US$30M)',firmWidth:232,
+    centreLabel:'FIE setup & changes',centreSmall:'UP TO US$30M · ECON. & TRADE BUREAU',
+    route:'M450 395V282',line:'M450 406V292',stamp:'FIE AUTHORIZED',
+    status:'The eligible FIE establishment or amendment application is handled through the centre.',
+    description:'The 2005 example covers establishment and amendment applications for foreign-invested enterprises (FIEs) with total investment up to US$30 million. The route is schematic.',
     location:'Printed p. 283 · PDF p. 51'
   }
 };
 
 const sources = [
-  {id:'1',title:'The 1994 intergovernmental agreement',description:'Articles 2–4 establish experience transfer, selective adaptation under Chinese law with respect for PRC sovereignty, a Vice-Premier Joint Steering Council and a Bilateral Working Committee. Original PDF confirms signing date 26 February 1994.',location:'SIP Chronicle (2012) · printed pp. 1361–1362 · PDF pp. 5–6',url:'https://www.sipac.gov.cn/szdaglzx/yqfzszgyyqz/202102/4a600d918f844554b00b6ad58fc35ea8/files/283d782ccf054e82a9afcfac4ad24fda.pdf'},
-  {id:'2',title:'Suzhou Industrial Park Chronicle (2012)',description:'Compiled by the SIP Local Chronicles Compilation Committee (Jiangsu People’s Publishing House). Chapter 5 records the 1995 committee draft, 2000 shared hall, 2002 training, 2003 delegated approvals (nearly 70 items) and the April 2005 sub-US$30m FIE scope.',location:'Chapter 5 · printed pp. 279–283 · PDF pp. 47–51 (SIP Archives digital edition)',url:'https://www.sipac.gov.cn/szdaglzx/yqfzszgyyqz/202102/fc57b418f4204a7f9dd72254a6a180fa/files/4a713be5ea3f4469afc70fe72b55c1bc.pdf'},
-  {id:'3',title:'Lee Hsien Loong’s EDB anniversary speech (1991)',description:'The 1 August 1991 speech traces EDB’s origin to the 1961 UN Winsemius Report, details cross-agency coordination within Singapore’s British-inherited civil service, and outlines Singapore’s 1990s push to leverage skills overseas.',location:'National Archives of Singapore · PDF pp. 1, 4, 7–8, 11',url:'https://www.nas.gov.sg/archivesonline/data/pdfdoc/lhl19910801s.pdf'},
-  {id:'4',title:'Thirty years of government services (2024)',description:'The SIP Administrative Committee’s 5 December 2024 retrospective records the 2015 Administrative Approval Bureau reform and further consolidation of approval functions.',location:'Official retrospective · opening chronology',url:'https://www.sipac.gov.cn/szgyyq/tsyq/202412/e47d0d61d9234349989c90e23fb3042d.shtml'},
+  {id:'1',title:'The 1994 intergovernmental agreement',description:'Articles 2–4 support experience transfer, selective adaptation under Chinese law with respect for PRC sovereignty, a Joint Steering Council led by two Vice Premiers, and a Suzhou–JTC Bilateral Working Committee. Original PDF confirms signing date 26 February 1994.',location:'SIP Chronicle (2012) · printed pp. 1361–1362 · PDF pp. 5–6',url:'https://www.sipac.gov.cn/szdaglzx/yqfzszgyyqz/202102/4a600d918f844554b00b6ad58fc35ea8/files/283d782ccf054e82a9afcfac4ad24fda.pdf'},
+  {id:'2',title:'Suzhou Industrial Park Chronicle (2012)',description:'Compiled by the SIP Local Chronicles Compilation Committee (Jiangsu People’s Publishing House). Chapter 5 records the 1995 committee draft, 2000 shared hall, 2002 Singapore training, 2003 approval powers alongside nearly 70 authorized matters (classified on p. 282 into direct approvals, filings, and referrals), and the April 2005 FIE scope up to US$30m.',location:'Chapter 5 · printed pp. 279–283 · PDF pp. 47–51 (SIP Archives digital edition)',url:'https://www.sipac.gov.cn/szdaglzx/yqfzszgyyqz/202102/fc57b418f4204a7f9dd72254a6a180fa/files/4a713be5ea3f4469afc70fe72b55c1bc.pdf'},
+  {id:'3',title:'Lee Hsien Loong’s EDB anniversary speech (1991)',description:'The 1 August 1991 speech traces EDB’s origin to the 1961 UN Winsemius Report, explains cross-ministry coordination in serving investors, notes that industrial-estate services were progressively hived off from EDB to agencies like JTC, and outlines Singapore’s 1990s overseas push.',location:'National Archives of Singapore · PDF pp. 1, 4, 7–8, 11',url:'https://www.nas.gov.sg/archivesonline/data/pdfdoc/lhl19910801s.pdf'},
+  {id:'4',title:'Thirty years of government services (2024)',description:'The SIP Administrative Committee’s 5 December 2024 retrospective specifically credits JTC’s customer-service experience in founding the 2002 one-stop centre and records the 2015 establishment of the Administrative Approval Bureau.',location:'Official retrospective · opening chronology',url:'https://www.sipac.gov.cn/szgyyq/tsyq/202412/e47d0d61d9234349989c90e23fb3042d.shtml'},
   {id:'5',title:'Liu & Wang (2021) · transnational policy transfer',description:'Hong Liu and Ting-Yan Wang (2021), “The institutionalization and effectiveness of transnational policy transfer: The China–Singapore Suzhou Industrial Park as a case study.” Public Administration and Development, 41(3), 103–114.',location:'Peer-reviewed research · sections 3, 4.1–4.3',url:'https://doi.org/10.1002/pad.1956'}
 ];
 
 const criteria = {
-  selection:{title:'Chosen under sovereignty, not imposed.',copy:'Article 3 of the 1994 agreement required selective adoption under Chinese law and respect for PRC sovereignty. The 1995 proposal and 2002 targeted training confirm deliberate, non-impositional learning.',source:'1,2',refs:'Sources 1 and 2'},
-  adaptation:{title:'Informal coordination became delegated law.',copy:'Singapore’s EDB relied on small-state cross-agency coordination shaped by British civil-service traditions. Suzhou moved beyond a 2000 shared hall to create formal statutory delegation of departmental approval authority within Chinese administrative law.',source:'2,3,5',refs:'Sources 2, 3 and 5'},
-  integration:{title:'Twenty years of institutional continuity.',copy:'The centre exercised nearly 70 delegated approvals in 2003, absorbed sub-US$30m FIE setup and amendment work in 2005, and was further consolidated into the Administrative Approval Bureau in 2015.',source:'2,4,5',refs:'Sources 2, 4 and 5'}
+  selection:{title:'Chosen and studied, not imposed.',copy:'Article 3 of the 1994 agreement mandated selective adoption under Chinese law while respecting PRC sovereignty. Submitting Suzhou’s own 1995 draft to the working committee and sending eight officials for 2002 Singapore training provide concrete behavioral evidence of active selection.',source:'1,2',refs:'Sources 1 and 2'},
+  adaptation:{title:'Customer-service practice gained local approval power.',copy:'Singapore’s EDB coordinated investor services across agencies and hived off industrial-estate services to JTC, whose customer-service approach Suzhou studied. Moving beyond a 2000 shared intake hall, the park authorized its centre in 2003–2005 to exercise approval powers on selected matters under Chinese law.',source:'2,3,4,5',refs:'Sources 2, 3, 4 and 5'},
+  integration:{title:'Sustained centralization from 1995 to 2015 and beyond.',copy:'One-stop services evolved across two decades: from the 1995 draft to 2003 approval powers (receiving nearly 70 authorized matters) and 2005 FIE setup and change approvals. In 2015, the park carried centralization further by establishing an Administrative Approval Bureau.',source:'2,4,5',refs:'Sources 2, 4 and 5'}
 };
 
 const events = {
-  agreement:{title:'1994 · An intergovernmental diplomatic channel',copy:'Signed 26 February 1994 after China–Singapore ties (1990) and Deng’s 1992 opening push, the agreement paired China’s FDI needs with Singapore’s UN- and British-influenced EDB governance experience. Article 3 required selective adaptation respecting Chinese sovereignty; Article 4 created a Vice-Premier Joint Steering Council and Bilateral Working Committee.',source:'1,3'},
-  proposal:{title:'1995 · The service entered bilateral discussion',copy:'On 10 August 1995, the park submitted its draft one-stop service proposal to the fourth bilateral working committee meeting. This connects a specific local service plan directly to the government-to-government diplomatic channel.',source:'2'},
-  training:{title:'2002 · Eight officials studied the practice',copy:'In March 2002, eight officials travelled to Singapore for a dedicated one-stop service training project focused on pro-business investor services. Later that year, Suzhou defined the centre’s delegated powers.',source:'2'}
+  agreement:{title:'1994 · An intergovernmental channel for learning',copy:'Signed 26 February 1994—following 1990 diplomatic ties and Deng Xiaoping’s 1992 call to learn from Singapore—the agreement supported selective adaptation under Chinese law while respecting PRC sovereignty (Art. 3). Article 4 created a Joint Steering Council led by two Vice Premiers and a Bilateral Working Committee linking Suzhou and Singapore’s Jurong Town Corporation (JTC).',source:'1,3,4,5'},
+  proposal:{title:'1995 · Local draft entered the bilateral committee',copy:'On 10 August 1995, Suzhou Industrial Park submitted its draft one-stop service proposal to the fourth Suzhou–JTC bilateral working committee meeting, placing a concrete local service plan inside the government-to-government channel.',source:'2'},
+  training:{title:'2002 · Eight officials studied in Singapore & JTC model',copy:'In March 2002, eight park officials travelled to Singapore for dedicated one-stop service training on pro-business investor services; the park’s official retrospective specifically identifies JTC’s customer service as a model for founding the one-stop centre.',source:'2,4'}
 };
 
 const $ = (selector) => document.querySelector(selector);
